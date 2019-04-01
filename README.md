@@ -58,7 +58,15 @@ $ DEPLOY_HOSTNAME=galaxy.meteor.com meteor deploy example.meteorapp.com --settin
 
 Once it's done, go to the URL (in this case, example.meteorapp.com) and create an account again.
 
-## 4. Build the mobile app
+## 4. Register in Firebase
+
+For this I followed the [raix:push Android Guide](https://github.com/raix/push/blob/master/docs/ANDROID.md).
+
+In these steps, you create a sender ID and apiKey. Put these in `settings.json`. Also put the sender ID in `mobile-config.js`.
+
+Firebase will also give you a file called `google-services.json`. Put this in place of the empty file by the same name in this repo.
+
+## 5. Build the mobile app
 
 For more details on this, see the [Meteor Mobile guide](https://guide.meteor.com/mobile.html).
 
@@ -73,14 +81,6 @@ To build the mobile app, we use this command:
 ```
 $ meteor build ../example-build --server=http://example.meteorapp.com
 ```
-
-## 5. Register in Firebase
-
-For this I followed the [raix:push Android Guide](https://github.com/raix/push/blob/master/docs/ANDROID.md).
-
-In these steps, you create a sender ID and apiKey. Put these in `settings.json`. Also put the sender ID in `mobile-config.js`.
-
-Firebase will also give you a file called `google-services.json`. Put this in place of the empty file by the same name in this repo.
 
 ## 6. Edit `build.gradle`
 
