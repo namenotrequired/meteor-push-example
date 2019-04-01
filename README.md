@@ -80,6 +80,8 @@ For this I followed the [raix:push Android Guide](https://github.com/raix/push/b
 
 In these steps, you create a sender ID and apiKey. Put these in `settings.json`. Also put the sender ID in `mobile-config.js`.
 
+Firebase will also give you a file called `google-services.json`. Put this in place of the empty file by the same name in this repo.
+
 ## 6. Edit `build.gradle`
 
 Go to your `example-build` folder and find `android/project/build.gradle`. Open it in Android Studio.
