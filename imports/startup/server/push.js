@@ -15,10 +15,6 @@ Meteor.startup(() => {
       apiKey: Meteor.settings.apiKey,
       projectNumber: Meteor.settings.projectNumber,
     },
-    fcm: {
-      apiKey: Meteor.settings.apiKey,
-      projectNumber: Meteor.settings.projectNumber,
-    },
     // production: true,
     // 'sound' true,
     // 'badge' true,
